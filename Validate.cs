@@ -11,10 +11,10 @@ namespace Lab12
     {
         public static bool Continue()
         {
+            Console.WriteLine("Play again? (y/n)");
+            string Continue = Console.ReadLine().ToLower();
             while (true)
             {
-                Console.WriteLine("Play again? (y/n)");
-                string Continue = Console.ReadLine().ToLower();
                 if (Regex.IsMatch(Continue, "^(n|no)$"))
                     return false;
                 else if (Regex.IsMatch(Continue, "^(y|yes)$"))
@@ -31,10 +31,10 @@ namespace Lab12
 
         public static bool NewOpponent()
         {
+            Console.WriteLine("Would you like a new opponent? (y/n)");
+            string YorN = Console.ReadLine().ToLower();
             while (true)
             {
-                Console.WriteLine("Would you like a new opponent? (y/n)");
-                string YorN = Console.ReadLine().ToLower();
                 if (Regex.IsMatch(YorN, "^(n|no)$"))
                     return false;
                 else if (Regex.IsMatch(YorN, "^(y|yes)$"))
@@ -43,7 +43,7 @@ namespace Lab12
                 }
                 else
                 {
-                    Console.WriteLine("I didn't understand that. Try again!");
+                    Console.WriteLine("Do you kiss your mother with that mouth? Try again!");
                     YorN = Console.ReadLine().ToLower();
                 }
             }
