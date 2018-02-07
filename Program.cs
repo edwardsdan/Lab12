@@ -22,6 +22,7 @@ namespace Lab12
             Console.WriteLine($"You won {wins} and lost {losses}");
         }
         #endregion
+            
         #region Game!
         public static void PlayGame(ref int wins, ref int losses, Human UserName, ref Player Opponent)
         {

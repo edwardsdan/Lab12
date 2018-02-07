@@ -7,13 +7,11 @@ using System.Text.RegularExpressions;
 
 namespace Lab12
 {
-    public enum Roshambo { rock = 1, paper, scissors };
-
     class RoshamboApp
     {
         public static Player ChooseOpponent()
         {
-            Console.WriteLine("Would you like to play against GrantChirpus or DoctorK or HulkHogan? (g/k/h)");
+            Console.WriteLine("Would you like to play against GrantChirpus, DoctorK or HulkHogan? (g/k/h)");
             string Opponent = Console.ReadLine().ToLower();
             
             while (true)
@@ -35,6 +33,5 @@ namespace Lab12
                 }
             }
         }
-
     }
 }

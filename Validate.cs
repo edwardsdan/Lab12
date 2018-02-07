@@ -7,12 +7,13 @@ using System.Text.RegularExpressions;
 
 namespace Lab12
 {
-    class Validate
+    partial class Validate
     {
         public static bool Continue()
         {
             Console.WriteLine("Play again? (y/n)");
             string Continue = Console.ReadLine().ToLower();
+
             while (true)
             {
                 if (Regex.IsMatch(Continue, "^(n|no)$"))

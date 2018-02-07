@@ -12,11 +12,10 @@ namespace Lab12
         {
             Name = "Grant Chirpus";
         }
-
+            
         public override Roshambo generateRoshambo(Roshambo x)
         {
             return Roshambo.rock;
         }
-
     }
 }

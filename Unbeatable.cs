@@ -13,11 +13,11 @@ namespace Lab12
             Name = "Hulk Hogan";
         }
 
-        public override Roshambo generateRoshambo(Roshambo x)
+        public override Roshambo generateRoshambo(Roshambo UserInput)
         {
-            if (x.ToString() == "rock")
+            if (UserInput.ToString() == "rock")
                 return Roshambo.paper;
-            else if (x.ToString() == "paper")
+            else if (UserInput.ToString() == "paper")
                 return Roshambo.scissors;
             else
                 return Roshambo.rock;
