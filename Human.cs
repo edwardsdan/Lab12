@@ -14,11 +14,10 @@ namespace Lab12
             Name = name;
         }
 
-        public override Roshambo generateRoshambo()
+        public override Roshambo generateRoshambo(Roshambo x)
         {
             Console.WriteLine("Rock, paper, or scissors? (r,p,s / 1,2,3)");
             string Input = Console.ReadLine().ToLower();
-            //return (Roshambo)Validate.MethodName(Input);
 
             while (true)
             {

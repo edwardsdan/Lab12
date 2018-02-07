@@ -13,7 +13,7 @@ namespace Lab12
     {
         public static Player ChooseOpponent()
         {
-            Console.WriteLine("Would you like to play against GrantChirpus or DoctorK? (g/k)");
+            Console.WriteLine("Would you like to play against GrantChirpus or DoctorK or HulkHogan? (g/k/h)");
             string Opponent = Console.ReadLine().ToLower();
             
             while (true)
@@ -21,13 +21,13 @@ namespace Lab12
                 if (Regex.IsMatch(Opponent, "^(doctork|k)$"))
                 {
                     return new HardMode();
-                    //return $"{HardMode.Name}: {HardMode.generateRoshambo()}";
                 }
                 else if (Regex.IsMatch(Opponent, "^(g|grant|grantchirpus)$"))
                 {
                     return new RockDude();
-                    //return $"{RockDude.Name}: {RockDude.generateRoshambo()}";
                 }
+                else if (Regex.IsMatch(Opponent, "^(h|hulk|hulkhogan)$"))
+                    return new Unbeatable();
                 else
                 {
                     Console.WriteLine("That didn't sound like a name! Try again!");

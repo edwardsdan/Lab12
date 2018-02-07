@@ -11,6 +11,6 @@ namespace Lab12
         public string Name { get; set; }
         public Roshambo RPS { get; set; }
 
-        public abstract Roshambo generateRoshambo();
+        public abstract Roshambo generateRoshambo(Roshambo x);
     }
 }

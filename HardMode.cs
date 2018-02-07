@@ -13,7 +13,7 @@ namespace Lab12
             Name = "Dr. K";
         }
 
-        public override Roshambo generateRoshambo()
+        public override Roshambo generateRoshambo(Roshambo x)
         {
             Random rnd = new Random();
             int number = rnd.Next(1, 3);

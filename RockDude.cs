@@ -13,10 +13,9 @@ namespace Lab12
             Name = "Grant Chirpus";
         }
 
-        public override Roshambo generateRoshambo()
+        public override Roshambo generateRoshambo(Roshambo x)
         {
-            Roshambo rockOnly = Roshambo.rock;
-            return rockOnly;
+            return Roshambo.rock;
         }
 
     }
